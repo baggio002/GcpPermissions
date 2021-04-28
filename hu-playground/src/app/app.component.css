@@ -1,0 +1,20 @@
+:host {
+	height: 100%;
+	min-height: 500px;
+	text-align: center;
+}
+
+#header {
+	height: 15%;
+	min-height: 100px;
+	background-color: skyblue;
+	padding: 20px 20px 20px 20px;
+	color: aliceblue;
+}
+#body {
+	height: 70%;
+}
+#footer {
+	height: 15%;
+	min-height: 100px;
+}
