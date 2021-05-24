@@ -1,0 +1,24 @@
+runtime: python
+env: flex
+threadsafe: true
+service: frontend
+runtime_config:
+  python_version: 3
+
+handlers:
+- url: /
+  static_files: dist/hu-playground/index.html
+  upload: dist/hu-playground/index.html
+ 
+- url: /
+  static_dir: dist/hu-playground
+
+skip_files:
+  - e2e/
+  - node_modules/
+  - src/
+  - coverage
+  - ^(.*/)?\..*$
+  - ^(.*/)?.*\.json$
+  - ^(.*/)?.*\.md$
+  - ^LICENSE
