@@ -1,0 +1,7 @@
+/home/zhaohu/workspace/GcpPermissions/CatchGCPPermission/src/main/java/com/zhaohu/gcppermissions/service/ComparePermissionsService.java
+/home/zhaohu/workspace/GcpPermissions/CatchGCPPermission/src/main/java/com/zhaohu/gcppermissions/repository/PermissionReopsitory.java
+/home/zhaohu/workspace/GcpPermissions/CatchGCPPermission/src/main/java/com/zhaohu/gcppermissions/repository/RoleRepository.java
+/home/zhaohu/workspace/GcpPermissions/CatchGCPPermission/src/main/java/com/zhaohu/gcppermissions/entity/Role.java
+/home/zhaohu/workspace/GcpPermissions/CatchGCPPermission/src/main/java/com/zhaohu/gcppermissions/GcpRolePermissionRunner.java
+/home/zhaohu/workspace/GcpPermissions/CatchGCPPermission/src/main/java/com/zhaohu/gcppermissions/entity/Permission.java
+/home/zhaohu/workspace/GcpPermissions/CatchGCPPermission/src/main/java/com/zhaohu/gcppermissions/dao/ComparePermissionsDAO.java

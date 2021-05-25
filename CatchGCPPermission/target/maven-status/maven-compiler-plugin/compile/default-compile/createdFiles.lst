@@ -1,0 +1,7 @@
+com/zhaohu/gcppermissions/entity/Role.class
+com/zhaohu/gcppermissions/entity/Permission.class
+com/zhaohu/gcppermissions/dao/ComparePermissionsDAO.class
+com/zhaohu/gcppermissions/repository/RoleRepository.class
+com/zhaohu/gcppermissions/GcpRolePermissionRunner.class
+com/zhaohu/gcppermissions/service/ComparePermissionsService.class
+com/zhaohu/gcppermissions/repository/PermissionReopsitory.class
