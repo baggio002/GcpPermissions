@@ -28,7 +28,7 @@ import com.zhaohu.gcppermissions.repository.RoleRepository;
 @SpringBootApplication
 public class GcpRolePermissionRunner implements ApplicationRunner {
 
-	private static final String URL = "https://cloud-dot-devsite-v2-prod.appspot.com/iam/docs/permissions-reference_973f4f5c3eae1772d398e72832785e5f270164cbdad48ec3c7971dec7a5f843a.frame";
+	private static final String URL = "https://cloud-dot-devsite-v2-prod.appspot.com/iam/docs/permissions-reference_775b924a5ef85079035e9937fd7ddd5ff0c1522673f07cb7da6c4f1db7b72405.frame";
 	// private static final String URL =
 	// "https://cloud.google.com/iam/docs/permissions-reference";
 	/*
