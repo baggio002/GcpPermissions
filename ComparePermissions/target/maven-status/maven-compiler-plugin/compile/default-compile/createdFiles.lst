@@ -1,0 +1,10 @@
+com/zhaohu/compare/permissions/ComparePermissionsApplication.class
+com/zhaohu/compare/permissions/config/CorsConfiguration.class
+com/zhaohu/compare/permissions/view/RoleView.class
+com/zhaohu/compare/permissions/repostory/PermissionRepository.class
+com/zhaohu/compare/permissions/entity/Role.class
+com/zhaohu/compare/permissions/controller/ComparePermissionsController.class
+com/zhaohu/compare/permissions/view/PermissionView.class
+com/zhaohu/compare/permissions/entity/Permission.class
+com/zhaohu/compare/permissions/controller/ComparePermissionException.class
+com/zhaohu/compare/permissions/repostory/RoleRepository.class

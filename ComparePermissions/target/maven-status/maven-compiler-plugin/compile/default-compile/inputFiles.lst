@@ -1,0 +1,10 @@
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/entity/Permission.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/repostory/RoleRepository.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/view/RoleView.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/controller/ComparePermissionsController.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/ComparePermissionsApplication.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/view/PermissionView.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/controller/ComparePermissionException.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/entity/Role.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/repostory/PermissionRepository.java
+/home/zhaohu/workspace/GcpPermissions/ComparePermissions/src/main/java/com/zhaohu/compare/permissions/config/CorsConfiguration.java

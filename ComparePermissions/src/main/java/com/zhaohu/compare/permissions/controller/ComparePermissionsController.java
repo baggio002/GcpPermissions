@@ -34,11 +34,14 @@ public class ComparePermissionsController {
 
 	@GetMapping("/roles")
 	public List<RoleView> roles() {
+		System.out.println("=======begin=========");
+		log.info("=======begin=========");
 		List<RoleView> views = new ArrayList<RoleView>();
 		roleRepository.findAll().forEach(role -> {
 			views.add(convertToRoleView(role));
 		});
-		
+                log.info("roles size = " + views.size());
+		System.out.println("roles size = " + views.size());		
 		return views;
 	}
 	
