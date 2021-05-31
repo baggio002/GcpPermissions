@@ -31,15 +31,15 @@ const httpOptions = {
     headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]({
         'Content-Type': 'application/json',
         // tslint:disable-next-line: indent
-        'Access-Control-Allow-Origin': 'http://localhost:4200'
+        'Access-Control-Allow-Origin': '*'
     })
 };
 class RolePermissionService {
     constructor(http) {
         this.http = http;
-        this.rolesUrl = 'http://localhost:8080/roles'; // URL to web api
-        this.roleUrl = 'http://localhost:8080/role';
-        this.permissionsUrl = 'http://localhost:8080/permissions';
+        this.rolesUrl = 'https://backend-dot-zhaohu-prod.uc.r.appspot.com/roles'; // URL to web api
+        this.roleUrl = 'https://backend-dot-zhaohu-prod.uc.r.appspot.com/role';
+        this.permissionsUrl = 'https://backend-dot-zhaohu-prod.uc.r.appspot.com/permissions';
     }
     getRoles() {
         return this.http.get(this.rolesUrl, httpOptions).pipe();
@@ -77,8 +77,7 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 const environment = {
-    production: false,
-    webapiurl: window["envconfig"]["apiurl"] || "default"
+    production: false
 };
 /*
  * For easier debugging in development mode, you can import the following file

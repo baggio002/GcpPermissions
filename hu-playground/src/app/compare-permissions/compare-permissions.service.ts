@@ -13,15 +13,15 @@ const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type':  'application/json',
 	  // tslint:disable-next-line: indent
-	  'Access-Control-Allow-Origin': 'http://localhost:4200'
+	  'Access-Control-Allow-Origin': '*'
   })
 };
 
 @Injectable()
 export class RolePermissionService {
-  rolesUrl = 'http://localhost:8080/roles';  // URL to web api
-  roleUrl = 'http://localhost:8080/role'; 
-  permissionsUrl = 'http://localhost:8080/permissions';
+  rolesUrl = 'https://backend-dot-zhaohu-prod.uc.r.appspot.com/roles';  // URL to web api
+  roleUrl = 'https://backend-dot-zhaohu-prod.uc.r.appspot.com/role'; 
+  permissionsUrl = 'https://backend-dot-zhaohu-prod.uc.r.appspot.com/permissions';
 
   constructor(
     private http: HttpClient) {
