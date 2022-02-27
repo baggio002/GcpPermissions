@@ -1,0 +1,9 @@
+runtime: python38
+service: frontend
+
+handlers:
+- url: /
+  static_files: dist/hu-playground/index.html
+  upload: dist/hu-playground/index.html
+- url: /
+  static_dir: dist/hu-playground

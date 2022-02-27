@@ -1,0 +1,93 @@
+<div id="left-container">
+	<input id="role_input" type="text" class="form-control" [(ngModel)]="role" [ngbTypeahead]="searchRole"
+		(selectItem)="setRole($event)" [inputFormatter]="formatterRole" [resultFormatter]="formatterRole"
+		[editable]='false' placeholder="input role name" />
+	<div id="role-selected-list">
+		<ul *ngFor="let role of roleSelected">
+			<li>{{role.roleName}}</li>
+		</ul>
+	</div>
+	<input id="permission_input" type="text" class="form-control" [(ngModel)]="permission" [ngbTypeahead]="searchPermission"
+		(selectItem)="setPermission($event)" [inputFormatter]="formatterPermission"
+		[resultFormatter]="formatterPermission" [editable]='false' placeholder="input permission name" />
+
+	<ngb-accordion #acc="ngbAccordion">
+		<ngb-panel title="Total {{permissionSelected.size}} permissions, click to show
+		all">
+			<ng-template ngbPanelContent>
+				<ul *ngFor="let permission of permissionSelected">
+					<li>{{permission.permissionName}}</li>
+				</ul>
+			</ng-template>
+		</ngb-panel>
+		<ngb-panel>
+			<ng-template ngbPanelTitle>
+			<span>&#9733; <b>{{excessPermissions.size}} Excess permissions, click to show
+		all </b> &#9733;</span>
+			</ng-template>
+			<ng-template ngbPanelContent>
+				<ul *ngFor="let permission of excessPermissions">
+					<li>{{permission.permissionName}}</li>
+				</ul>
+			</ng-template>
+		</ngb-panel>
+		<ngb-panel>
+			<ng-template ngbPanelTitle>
+				<span>&#9733; <b>{{samePermissions.size}} same permissions, click to show
+		all </b> &#9733;</span>
+			</ng-template>
+			<ng-template ngbPanelContent>
+				<ul *ngFor="let permission of samePermissions">
+					<li>{{permission.permissionName}}</li>
+				</ul>
+			</ng-template>
+		</ngb-panel>
+	</ngb-accordion>
+
+</div>
+<div id="right-container">
+	<input id="role_input" type="text" class="form-control" [(ngModel)]="role2" [ngbTypeahead]="searchRole"
+		(selectItem)="setRole2($event)" [inputFormatter]="formatterRole" [resultFormatter]="formatterRole"
+		[editable]='false' placeholder="input role name" />
+	<div id="role-selected-list">
+		<ul *ngFor="let role of roleSelected2">
+			<li>{{role.roleName}}</li>
+		</ul>
+	</div>
+	<input id="permission_input" type="text" class="form-control" [(ngModel)]="permission2" [ngbTypeahead]="searchPermission"
+		(selectItem)="setPermission2($event)" [inputFormatter]="formatterPermission"
+		[resultFormatter]="formatterPermission" [editable]='false' placeholder="input permission name" />
+
+	<ngb-accordion #acc="ngbAccordion">
+		<ngb-panel title="Total {{permissionSelected2.size}} permissions, click to show
+		all">
+			<ng-template ngbPanelContent>
+				<ul *ngFor="let permission of permissionSelected2">
+					<li>{{permission.permissionName}}</li>
+				</ul>
+			</ng-template>
+		</ngb-panel>
+		<ngb-panel>
+			<ng-template ngbPanelTitle>
+				<span>&#9733; <b>{{excessPermissions2.size}} excess permissions, click to show
+		all </b> &#9733;</span>
+			</ng-template>
+			<ng-template ngbPanelContent>
+				<ul *ngFor="let permission of excessPermissions2">
+					<li>{{permission.permissionName}}</li>
+				</ul>
+			</ng-template>
+		</ngb-panel>
+		<ngb-panel>
+			<ng-template ngbPanelTitle>
+				<span>&#9733; <b>{{samePermissions2.size}} same permissions, click to show
+		all </b> &#9733;</span>
+			</ng-template>
+			<ng-template ngbPanelContent>
+				<ul *ngFor="let permission of samePermissions2">
+					<li>{{permission.permissionName}}</li>
+				</ul>
+			</ng-template>
+		</ngb-panel>
+	</ngb-accordion>
+</div>
