@@ -60,6 +60,7 @@ public class GcpRolePermissionRunner implements ApplicationRunner {
 		roleRepository.saveAll(roles.values());
 		permissionRepository.saveAll(permissions);
 		System.out.println("================springboot complete!=================");
+		System.exit(0);
 	}
 	
 	@SuppressWarnings("finally")
