@@ -17,17 +17,18 @@
 	<properties>
 		<java.version>16</java.version>
 		<spring.cloud-version>Hoxton.SR8</spring.cloud-version>
+		<mysql.version>8.0.28</mysql.version>
 	</properties>
 	<dependencyManagement>
-    		<dependencies>
-        		<dependency>
-            			<groupId>org.springframework.cloud</groupId>
-            			<artifactId>spring-cloud-dependencies</artifactId>
-            			<version>${spring.cloud-version}</version>
-            			<type>pom</type>
-            			<scope>import</scope>
-                        </dependency>
-    		</dependencies>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring.cloud-version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
 	</dependencyManagement>
 	<dependencies>
 		<dependency>
@@ -35,9 +36,13 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<!-- <dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
+		</dependency> -->
 		<dependency>
-                	<groupId>org.springframework.cloud</groupId>
-    			<artifactId>spring-cloud-gcp-starter-sql-mysql</artifactId>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -62,20 +67,20 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>1.2.1</version>
-        <executions>
-            <execution>
-                <goals>
-                    <goal>java</goal>
-                </goals>
-            </execution>
-        </executions>
-        <configuration>
-            <mainClass>com.zhaohu.gcppermissions.GcpRolePermissionRunner</mainClass>
-        </configuration>
-    </plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.2.1</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>java</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>com.zhaohu.gcppermissions.GcpRolePermissionRunner</mainClass>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
